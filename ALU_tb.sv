@@ -1,10 +1,10 @@
 import Q2_ALU::*;
 module ALU_tb ();
-  logic clk;
-  logic reset;
+  bit clk;
+  bit reset;
   opcode_typedef opcode;
-  logic signed [3:0] A;
-  logic signed [3:0] B;
+  bit signed [3:0] A;
+  bit signed [3:0] B;
   reg signed [4:0] C, C_tb;
   logic [30:0] Correct_counter, false_counter;
   ALU DUT (

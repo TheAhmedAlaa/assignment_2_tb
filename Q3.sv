@@ -1,15 +1,13 @@
 package Q3;
-  typedef enum logic [1:0] {
+  typedef enum bit [1:0] {
     IDLE,
     ZERO,
     ONE,
     STORE
   } state_e;
-  logic y_tb;
-  logic [9:0] users_count_tb;
   class fsm_transaction;
-    rand logic x;
-    rand logic rst;
+    rand bit x;
+    rand bit rst;
     constraint conss {
       rst dist {
         0 := 95,

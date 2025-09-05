@@ -1,14 +1,14 @@
 package Q2_ALU;
-  typedef enum logic [1:0] {
+  typedef enum bit [1:0] {
     ADD,
     SUB,
     bitwise_invert_A,
     reduction_OR_B
   } opcode_typedef;
   class ALU_Class;
-    rand logic signed [3:0] A;
-    rand logic signed [3:0] B;
-    rand logic reset;
+    rand bit signed [3:0] A;
+    rand bit signed [3:0] B;
+    rand bitt reset;
     rand opcode_typedef opcode;
     constraint cons {
       reset dist {
